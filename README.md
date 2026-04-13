@@ -25,6 +25,7 @@ This project leverages Machine Learning to transform historical F1 telemetry and
 ## Project Structure
 - `src/`: Main Python scripts/notebooks.
 - `images/`: Visualizations (EDA, Heatmaps, Cluster Maps, SHAP plots).
+- `requirements.txt`: List of dependencies.
 
 ## Conclusion
 This project demonstrates how data-driven techniques can be used to predict when individual drivers wil make pit stops. It also identifies circuits with similar characteristics, facilitating the application of comparable race strategies. Finally, it analyses the durability of different tyre types, estimating how many laps they can last for based on their usage conditions.
