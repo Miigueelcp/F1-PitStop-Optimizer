@@ -16,7 +16,7 @@ This project leverages Machine Learning to transform historical F1 telemetry and
 * **Circuit Patterns:** Distinct clusters separate tracks such as Monaco (high cumulative wear/low degradation rate) and the Chinese Grand Prix (extreme degradation rate) from the Canadian Grand Prix (low cumulative wear/low degradation rate) and the Spanish Grand Prix (balanced degradation).
 
 ## Tech Stack
-* **Language:** Python 3.x
+* **Language:** Python 3.14
 * **Machine Learning:** Scikit-learn (Random Forest, K-Means, StandardScaler)
 * **Explainer:** SHAP (Lundberg & Lee)
 * **Visualization:** Seaborn, Matplotlib, AdjustText
