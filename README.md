@@ -15,21 +15,18 @@ This project leverages **Machine Learning** to transform historical F1 telemetry
 * **Strategy:** The model has learned that a driver should stay out even with high tire wear if the lap times have not 'fallen of the cliff' yet.
 * **Circuit Patterns:** Distinct clusters separate 'Tyre Killers' like the Chinese GP (extreme degradation) from tactical anomalies like Monaco (high wear but low degradation rate) and balanced tracks like Barcelona.
 
-## Tech Stack
-* **Language:** Python 3.14
-* **Machine Learning:** Scikit-learn (Random Forest, K-Means, StandardScaler)
-* **Explainer:** SHAP (Lundberg & Lee)
-* **Visualization:** Seaborn, Matplotlib, AdjustText
-* **Data Handling:** Pandas, NumPy
-
-## Data Preprocessing
-
-To ensure robust model performance, several preprocessing techniques were applied before training:
-
+## Data Preprocessing & Engineering
 * **Feature Scaling:** Numerical variables were standardized using StandardScales to normalize their distributions (mean = 0, standard deviation = 1). This prevents variables with larger magnitudes from dominating the model.
 *  **Class Imbalance Handling (SMOTE):** The target variable 'PitNextLap' is naturally imbalanced, as pit stops are relatively rare events. To addres this, SMOTE (Synthetic Minority Over-sampling Technique) was applied to generate synthetic samples of the minority class and improve model recall.
 *  **Feature Engineering:** Custom features were engineered to represent the underlying dynamics of each circuit. These variables capture tyre degradation rates, lap time variability, and performance evolution, enabling the application of clustering algorithms (K-Means) to identify circuits with similiar strategic profiles.
 
+## Tech Stack
+* **Language:** Python 3.14
+* **Machine Learning:** Scikit-learn (Random Forest, K-Means, StandardScaler)
+* **Imbalance Handling:** imbalanced-learn (SMOTE)
+* **Explainer:** SHAP (Lundberg & Lee)
+* **Visualization:** Seaborn, Matplotlib, AdjustText
+* **Data Handling:** Pandas, NumPy
 
 
 ## Project Structure
