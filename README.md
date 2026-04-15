@@ -10,6 +10,9 @@ This project leverages **Machine Learning** to transform historical F1 telemetry
 * **Circuit Clustering:** K-Means clustering (optimised via the elbow method) groups global circuits into four strategic profiles: Conservative, Standard, Aggresive and Extreme.
 * **Strategic Heatmaps:** Probabilistic visualizations of pit windows across different tyre compounds (Hard, Medium, Soft).
 
+## Dataset & Variables
+The model is trained on over 15,000 samples of professional racing telemetry. For a detailed breakdown of the 16 variables and engineered features, see the [Data Dictionary](docs/data_dictionary.md).
+
 ## Key Insights 
 * **Performance:** The model successfully predicts over 91% of tactical pit stops.
 * **Strategy:** The model has learned that a driver should stay out even with high tire wear if the lap times have not 'fallen of the cliff' yet.
@@ -32,6 +35,7 @@ This project leverages **Machine Learning** to transform historical F1 telemetry
 ## Project Structure
 - `src/`: Main Python scripts containing the ML pipeline and simulation logic.
 - `images/`: Visualizations (EDA, Heatmaps, Cluster Maps, SHAP plots).
+- `docs/`:Technical documentation and Data Dictionary.
 - `data/`: Source telemetry and cleaned dataset.
 - `requirements.txt`: Environment dependencies.
 
