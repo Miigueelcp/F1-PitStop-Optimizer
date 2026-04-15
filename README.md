@@ -25,7 +25,7 @@ This project leverages Machine Learning to transform historical F1 telemetry and
 ## Project Structure
 - `src/`: Main Python scripts containing the ML pipeline and simulation logic.
 - `images/`: Visualizations (EDA, Heatmaps, Cluster Maps, SHAP plots).
-- `images/`: Source telemetry and cleaned dataset.
+- `data/`: Source telemetry and cleaned dataset.
 - `requirements.txt`: Environment dependencies.
 
 ## Conclusion
