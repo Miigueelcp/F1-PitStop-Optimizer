@@ -5,4 +5,4 @@ seaborn
 scikit-learn
 shap
 adjustText
-os
+imbalanced-learn
