@@ -3,7 +3,7 @@
 This project leverages Machine Learning to transform historical F1 telemetry and race data (2023-2024) into actionable strategic insights. It moves beyond simple data analysis to provide modeling and tactical simulations.
 
 ## Key Features
-* ** Exploratory Data Analysis (EDA):** A deep five into race variables, including driver performance (wins/points), tyre life cycles, fastest laps and historical pit stop timing.
+* **Exploratory Data Analysis (EDA):** A deep five into race variables, including driver performance (wins/points), tyre life cycles, fastest laps and historical pit stop timing.
 * **Pit Stop Prediction:** A Random Forest clasifier with **91% recall**, specifically tuned to identify optimal pit windows before the performance 'cliff'.
 * **Explanaible AI (XAI):** Integrated **SHAP** values to decode the model's 'black box', revealing the weight of Track Position vs. Tyre Degradation.
 * **Race Strategy Simulator:** A stochastic simulation tool that forecasts race scenarios based on position, stint, tyre life, compound, lap time delta, cumulative degradation, position change and race progress.
