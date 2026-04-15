@@ -36,12 +36,12 @@ The model is trained on over 52,000 samples of professional racing telemetry. Fo
 - `main.py`: The entry point of the application. Ir orchestrates the entire pipeline from data loading to race simulation.
 - **`src/`**: Specialized modules containing the core logic:
     * `config.py`: Global settings, reproducibility seeds, and automated directory management.
-    * `01_preprocessing.py`: Functions for data loading, cleaning and initial statistical inspection.
-    * `02_eda.py`: A comprehensive visualization suite for analyzing race trends and driver performance.
-    * `03_machine_learning.py`: Model training (Random Forest), class balancing (SMOTE), and Explainable AI (SHAP).
-    * `04_simulation.py`: Dynamic race engine and lap-by-lap probability generator.
-    * `05_clustering.py`: K-Means implementation to identify and profile circuits."
-    * `06_strategy_viz.py`: Advanced visual tool, including the Strategic Probability Heatmaps.
+    * `preprocessing.py`: Functions for data loading, cleaning and initial statistical inspection.
+    * `eda.py`: A comprehensive visualization suite for analyzing race trends and driver performance.
+    * `machine_learning.py`: Model training (Random Forest), class balancing (SMOTE), and Explainable AI (SHAP).
+    * `simulation.py`: Dynamic race engine and lap-by-lap probability generator.
+    * `clustering.py`: K-Means implementation to identify and profile circuits."
+    * `strategy_viz.py`: Advanced visual tool, including the Strategic Probability Heatmaps.
 * **`images/`**: Resulting assets organized by analysis phase:
     * `01_eda/`: Correlation matrices, season wins, points standing, tire life cicles, fastest laps and pit stop timing.
     * `02_ml_results/`: Confusion matrices and feature impact plots (SHAP).
