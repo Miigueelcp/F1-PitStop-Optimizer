@@ -11,7 +11,7 @@ This project leverages **Machine Learning** to transform historical F1 telemetry
 * **Strategic Heatmaps:** Probabilistic visualizations of pit windows across different tyre compounds (Hard, Medium, Soft).
 
 ## Dataset & Variables
-The model is trained on over 15,000 samples of professional racing telemetry. For a detailed breakdown of the 16 variables and engineered features, see the [Data Dictionary](docs/data_dictionary.md).
+The model is trained on over 52,000 samples of professional racing telemetry. For a detailed breakdown of the 16 variables and engineered features, see the [Data Dictionary](docs/data_dictionary.md).
 
 ## Key Insights 
 * **Performance:** The model successfully predicts over 91% of tactical pit stops.
