@@ -12,7 +12,7 @@ This project leverages Machine Learning to transform historical F1 telemetry and
 
 ## Key Insights 
 * **Performance:** The model successfully predicts over 91% of tactical pit stops.
-* **Strategy:**The model has learned that a driver should stay out even with high tire wear if the lap times have not 'fallen of the cliff' yet.
+* **Strategy:** The model has learned that a driver should stay out even with high tire wear if the lap times have not 'fallen of the cliff' yet.
 * **Circuit Patterns:** Distinct clusters separate 'Tyre Killers' like the Chinese GP (extreme degradation) from tactical anomalies like Monaco (high wear but low degradation rate) and balanced tracks like Barcelona.
 
 ## Tech Stack
