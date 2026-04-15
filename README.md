@@ -33,10 +33,22 @@ The model is trained on over 52,000 samples of professional racing telemetry. Fo
 
 
 ## Project Structure
-- `src/`: Main Python scripts containing the ML pipeline and simulation logic.
-- `images/`: Visualizations (EDA, Heatmaps, Cluster Maps, SHAP plots).
-- `docs/`:Technical documentation and Data Dictionary.
-- `data/`: Source telemetry and cleaned dataset.
+- `main.py`: The entry point of the application. Ir orchestrates the entire pipeline from data loading to race simulation.
+- **`src/`**: Specialized modules containing the core logic:
+    * `config.py`: Global settings, reproducibility seeds, and automated directory management.
+    * `01_preprocessing.py`: Functions for data loading, cleaning and initial statistical inspection.
+    * `02_eda.py`: A comprehensive visualization suite for analyzing race trends and driver performance.
+    * `03_machine_learning.py`: Model training (Random Forest), class balancing (SMOTE), and Explainable AI (SHAP).
+    * `04_simulation.py`: Dynamic race engine and lap-by-lap probability generator.
+    * `05_clustering.py`: K-Means implementation to identify and profile circuits."
+    * `06_strategy_viz.py`: Advanced visual tool, including the Strategic Probability Heatmaps.
+* **`images/`**: Resulting assets organized by analysis phase:
+    * `01_eda/`: Correlation matrices, season wins, points standing, tire life cicles, fastest laps and pit stop timing.
+    * `02_ml_results/`: Confusion matrices and feature impact plots (SHAP).
+    * `03_clustering/`: Elbow method analysis and the F1 Circuit Strategic Map.
+    * `04_simulation/`: Race simulation logs and a strategic tyre heat map.
+- `docs/`: Technical documentation, including the detailed [Data Dictionary](docs/data_dictionary.md).
+- `data/`: Local storage for the telemetry dataset (e.g., `f1_strategy_dataset_v2.csv`).
 - `requirements.txt`: Environment dependencies.
 
 
