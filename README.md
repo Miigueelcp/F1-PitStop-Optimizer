@@ -53,7 +53,7 @@ The model is trained on over 52,000 samples of professional racing telemetry. Fo
 
 
 ## Conclusion
-This project demonstrates how data-driven techniques can be used to predict when individual drivers will make pit stops. It also identifies circuits with similar characteristics, facilitating the application of comparable race strategies. Finally, it analyses the durability of different tyre types, estimating how many laps they can last for based on their usage conditions.
+This project shows how data-driven techniques can predict when individual drivers will make pit stops. It also identifies circuits with similiar characteristics, enabling comparable race strategies to be applied. Finally, it analyses the durability of different tyre types and estimates how many laps that can last based on their usage conditions.
 
 
 
